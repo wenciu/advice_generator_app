@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Manrope", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  color: #fff;
+  background-color: hsl(218, 20%, 24%);
+  border-radius: 15px;
+}
+
+.container p {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: hsl(150, 100%, 66%);
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.container h2 {
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 15px 50px;
+  color: hsl(193, 38%, 86%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container .divider-desktop {
+  margin: 0 auto;
+  position: absolute;
+  left: 50px;
+  bottom: 60px;
+  width: 80%;
+}
+
+.container .divider-mobile {
+  display: none;
+}
+
+.container .circle {
+  background-color: hsl(150, 100%, 66%);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -35px;
+  left: 215px;
+  z-index: 1;
+}
+
+.container .circle:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 40px rgba(82, 255, 168, 0.5);
+}
+
+.container .dice {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: -15px;
+  left: 235px;
+  z-index: 2;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 300px;
+    position: relative;
+    color: #fff;
+    background-color: hsl(218, 20%, 24%);
+    border-radius: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container .divider-desktop {
+    display: none;
+  }
+
+  .container .divider-mobile {
+    display: block;
+    position: absolute;
+    left: 32px;
+    bottom: 50px;
+    width: 80%;
+  }
+
+  .container h2 {
+    font-size: 21px;
+  }
+
+  .container .circle {
+    bottom: -35px;
+    left: 135px;
+  }
+
+  .container .dice {
+    bottom: -15px;
+    left: 155px;
   }
 }
