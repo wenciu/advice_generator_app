@@ -1,0 +1,12 @@
+
+.advice {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    background-image: url(../../images/pattern-divider-desktop.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    font-size: 3vw;
+    @include breakpoint("md") {
+        font-size: 2vw;
+    }
+}

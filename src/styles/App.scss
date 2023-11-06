@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+@import './basics/variables.scss';
+@import './basics/defaults.scss';
+@import './basics/mixins.scss';
+
+// SCSS COMPONENTS
+@import './components/container.scss';
+@import './components/circle.scss';
+@import './components/advice.scss';
+
+.bg {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

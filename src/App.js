@@ -1,8 +1,5 @@
-import "./App.css";
+import "./styles/App.scss";
 import Advice from "./components/Advice";
 
-function App() {
-  return <Advice />;
-}
-
+const App = () => <Advice />
 export default App;
